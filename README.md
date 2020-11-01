@@ -1,1 +1,2 @@
-
+# Evan Hardek's Password Generator
+This a project intended to demostrate what I've learned when it comes to javascript so far. I have to generate a random string of numbers and have them appear on the screen in the text box. 
