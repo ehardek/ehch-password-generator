@@ -2,13 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // TODO: Let Characters equal arrays 
-//   - Chars equal single strings in 4 arrays
-lowerStr = 'a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z';
-upperStr= 'A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z';
-numStr = '1-2-3-4-5-6-7-9-0';
-specialStr = "!-#-$-%-(-)-*-+-.-/-:-;-<-=->-?-@-[-\-]-^-`-{-|-}-~";
-
+//   - Chars equal single strings
+let lowerStr = 'a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z';
+let upperStr= 'A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z';
+let numStr = '1-2-3-4-5-6-7-8-9-0';
+let specialStr = "!-#-$-%-(-)-*-+-.-/-:-;-<-=->-?-@-[-\-]-^-`-{-|-}-~";
 //   - Use split() separate Char strings 
+let lowerArr = lowerStr.split('-');
+let upperArr = upperStr.split('-');
+let numArr = numStr.split('-');
+let specialArr = specialStr.split('-');
 
 // TODO: Take User's Chosen Characters and Password Length 
 //   - Use Prompt() for User For Password Length
