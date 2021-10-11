@@ -35,7 +35,18 @@ if(wantsLowerChar === false && wantsUpperChar === false && wantsNumChar === fals
   return null
 }
 //   - Return function as User's Chosen Characters
+return usersChoices = {
+  length: passwordLength,
+  lowerChar: wantsLowerChar,
+  upperChar: wantsUpperChar,
+  numChar: wantsNumChar,
+  specialChar: wantsSpecialChar
 };
+};
+
+function generatePassword() {
+
+  let usersChoices = writePassword()
 
 // TODO: Write Generate Password Function
 //   - Take Chosen variables and set them in to an array for iteration
@@ -43,8 +54,8 @@ if(wantsLowerChar === false && wantsUpperChar === false && wantsNumChar === fals
 //   - Randomize the index of iteration (Could be separate function)
 //   - Combine Chosen Char Arrays using switch case
 //   - Select at least one of each chosen Character Array 
-//   - Use split() separate Char strings 
 
+}
 
 // Write password to the #password input
 function writePassword() {
