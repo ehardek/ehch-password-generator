@@ -15,15 +15,21 @@ let numArr = numStr.split('-');
 let specialArr = specialStr.split('-');
 
 // TODO: Take User's Chosen Characters and Password Length 
-function usersChoices() {
+function userChooses() {
 //   - Use Prompt() for User For Password Length
+let passwordLength = parseInt(prompt("Enter how many character you want in your password!"))
+while(passwordLength===""|| passwordLength < 8 || isNaN(passwordLength)||passwordLength>128){
+  alert("Your password must be 8 - 128 Characters!")
+  let passwordLength = parseInt(prompt("Enter how many character you want in your password!"))
+}
+alert("Your Password length is " + passwordLength+ "!")
+
 //     - Password Length must be 8 - 128
 //     - Password Length must be A number 
 //   - Use Confirm() as boolean for other Chars
 //     - We must let the Chars boolean from confirm()
 //   - Return function as User's Chosen Characters
 }
-
 
 // TODO: Write Generate Password Function
 //   - Take Chosen variables and set them in to an array for iteration
