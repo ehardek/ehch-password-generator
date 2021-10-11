@@ -25,11 +25,17 @@ while(passwordLength === " " || passwordLength < 8 || passwordLength > 128 || is
   let passwordLength = parseInt(prompt("Enter how many character you want in your password!"))
 }
 alert("Your Password length is " + passwordLength+ "!")
-
 //   - Use Confirm() as boolean for other Chars
-//     - We must let the Chars boolean from confirm()
-//   - Return function as User's Chosen Characters
+let wantsLowerChar = confirm("Do you want lowercase Characters in your password?");
+let wantsUpperChar = confirm("Do you want lowercase Characters in your password?");
+let wantsNumChar = confirm("Do you want lowercase Characters in your password?");
+let wantsSpecialChar = confirm("Do you want lowercase Characters in your password?");
+if(wantsLowerChar === false && wantsUpperChar === false && wantsNumChar === false && wantsSpecialChar === false ){
+  alert("You must reset, please choose at least one character!")
+  return null
 }
+//   - Return function as User's Chosen Characters
+};
 
 // TODO: Write Generate Password Function
 //   - Take Chosen variables and set them in to an array for iteration
