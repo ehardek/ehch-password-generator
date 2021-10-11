@@ -16,16 +16,16 @@ let specialArr = specialStr.split('-');
 
 // TODO: Take User's Chosen Characters and Password Length 
 function userChooses() {
-//   - Use Prompt() for User For Password Length
+//  - Use Prompt() for User For Password Length
 let passwordLength = parseInt(prompt("Enter how many character you want in your password!"))
-while(passwordLength===""|| passwordLength < 8 || isNaN(passwordLength)||passwordLength>128){
+
+//  - Prompt won't take a string - Password Length must be 8 - 128 - Password Length must be a number 
+while(passwordLength === " " || passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)){
   alert("Your password must be 8 - 128 Characters!")
   let passwordLength = parseInt(prompt("Enter how many character you want in your password!"))
 }
 alert("Your Password length is " + passwordLength+ "!")
 
-//     - Password Length must be 8 - 128
-//     - Password Length must be A number 
 //   - Use Confirm() as boolean for other Chars
 //     - We must let the Chars boolean from confirm()
 //   - Return function as User's Chosen Characters
@@ -38,21 +38,6 @@ alert("Your Password length is " + passwordLength+ "!")
 //   - Combine Chosen Char Arrays using switch case
 //   - Select at least one of each chosen Character Array 
 //   - Use split() separate Char strings 
-
-// TODO: Take User's Chosen Characters and Password Length 
-//   - Use Prompt() for User For Password Length
-//     - Password Length must be 8 - 128
-//     - Password Length must be A number 
-//   - Use Confirm() as boolean for other Chars
-//     - We must let the Chars boolean from confirm()
-//   - Return function as User's Chosen Characters
-
-// TODO: Write Generate Password Function
-//   - Take Chosen variables and set them in to an array for iteration
-//    - Use Switch Statement to process Char prompt and Confirm
-//   - Randomize the index of iteration (Could be separate function)
-//   - Combine Chosen Char Arrays using switch case
-//   - Select at least one of each chosen Character Array 
 
 
 // Write password to the #password input
